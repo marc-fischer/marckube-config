@@ -6,10 +6,10 @@ G91                     ; relative positioning
 G1 H2 Z5 F6000          ; lift Z relative to current position
 G1 H1 X-220 Y220 F2200 ; move quickly to X or Y endstop and stop there (first pass)
 G1 H1 X-220             ; home X axis
-G1 H1 Y220             ; home Y axis
+G1 H1 Y-220             ; home Y axis
 G1 X5 Y5 F6000          ; go back a few mm
 G1 H1 X-220 F360        ; move slowly to X axis endstop once more (second pass)
-G1 H1 Y220             ; then move slowly to Y axis endstop
+G1 H1 Y-220             ; then move slowly to Y axis endstop
 G90	
 G1 X15 Y205	F6000			; move the head away so we won't hit the screw at 0:0
 G91
